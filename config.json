@@ -1,0 +1,203 @@
+{
+  "BHuman": {
+    "JointCalibration": {
+      "HEAD_YAW": {
+        "Offset": 0,
+        "MinAngle": -119.5,
+        "MaxAngle": 119.5
+      },
+      "HEAD_PITCH": {
+        "Offset": 0,
+        "MinAngle": -38.5,
+        "MaxAngle": 29.5
+      },
+      "L_SHOULDER_PITCH": {
+        "Offset": 0,
+        "MinAngle": -119.5,
+        "MaxAngle": 119.5
+      },
+      "L_SHOULDER_ROLL": {
+        "Offset": 0,
+        "MinAngle": -18,
+        "MaxAngle": 76
+      },
+      "L_ELBOW_YAW": {
+        "Offset": 0,
+        "MinAngle": -119.5,
+        "MaxAngle": 119.5
+      },
+      "L_ELBOW_ROLL": {
+        "Offset": 0,
+        "MinAngle": -88.5,
+        "MaxAngle": -2
+      },
+      "L_WRIST_YAW": {
+        "Offset": 0,
+        "MinAngle": -104.5,
+        "MaxAngle": 104.5
+      },
+      "L_HAND": {
+        "Offset": 0,
+        "MinAngle": 0,
+        "MaxAngle": 1
+      },
+      "R_SHOULDER_PITCH": {
+        "Offset": 0,
+        "MinAngle": -119.5,
+        "MaxAngle": 119.5
+      },
+      "R_SHOULDER_ROLL": {
+        "Offset": 0,
+        "MinAngle": -76,
+        "MaxAngle": 18
+      },
+      "R_ELBOW_YAW": {
+        "Offset": 0,
+        "MinAngle": -119.5,
+        "MaxAngle": 119.5
+      },
+      "R_ELBOW_ROLL": {
+        "Offset": 0,
+        "MinAngle": 2,
+        "MaxAngle": 88.5
+      },
+      "R_WRIST_YAW": {
+        "Offset": 0,
+        "MinAngle": -104.5,
+        "MaxAngle": 104.5
+      },
+      "R_HAND": {
+        "Offset": 0,
+        "MinAngle": 0,
+        "MaxAngle": 1
+      },
+      "L_HIP_YAW_PITCH": {
+        "Offset": 0,
+        "MinAngle": -65.62,
+        "MaxAngle": 42.44
+      },
+      "L_HIP_ROLL": {
+        "Offset": 0,
+        "MinAngle": -21.74,
+        "MaxAngle": 45.29
+      },
+      "L_HIP_PITCH": {
+        "Offset": 0,
+        "MinAngle": -88,
+        "MaxAngle": 27.73
+      },
+      "L_KNEE_PITCH": {
+        "Offset": 0,
+        "MinAngle": -5.29,
+        "MaxAngle": 121.04
+      },
+      "L_ANKLE_PITCH": {
+        "Offset": 0,
+        "MinAngle": -68.15,
+        "MaxAngle": 52.86
+      },
+      "L_ANKLE_ROLL": {
+        "Offset": 0,
+        "MinAngle": -22.79,
+        "MaxAngle": 44.06
+      },
+      "R_HIP_YAW_PITCH": {
+        "Offset": 0,
+        "MinAngle": -65.62,
+        "MaxAngle": 42.44
+      },
+      "R_HIP_ROLL": {
+        "Offset": 0,
+        "MinAngle": -45.29,
+        "MaxAngle": 21.74
+      },
+      "R_HIP_PITCH": {
+        "Offset": 0,
+        "MinAngle": -88,
+        "MaxAngle": 27.73
+      },
+      "R_KNEE_PITCH": {
+        "Offset": 0,
+        "MinAngle": -5.9,
+        "MaxAngle": 121.47
+      },
+      "R_ANKLE_PITCH": {
+        "Offset": 0,
+        "MinAngle": -67.97,
+        "MaxAngle": 53.4
+      },
+      "R_ANKLE_ROLL": {
+        "Offset": 0,
+        "MinAngle": -44.06,
+        "MaxAngle": 22.8
+      }
+    },
+    "RobotDimensions": {
+      "LengthBetweenLegs": 100,
+      "UpperLegLength": 100,
+      "LowerLegLength": 102.9,
+      "HeightLeg5Joint": 45.19,
+      "ZLegJoint1ToHeadPan": 211.5,
+      "XHeadTiltToCamera": 50.71,
+      "ZHeadTiltToCamera": 17.74,
+      "HeadTiltToCameraTilt": 0.6108652381980153,
+      "XHeadTiltToUpperCamera": 58.71,
+      "ZHeadTiltToUpperCamera": 63.64,
+      "HeadTiltToUpperCameraTilt": 0.020943951,
+      "ArmOffset": {
+        "x": 0,
+        "y": 98,
+        "z": 185
+      },
+      "YElbowShoulder": 15,
+      "UpperArmLength": 105,
+      "LowerArmLength": 130
+    }
+  },
+  "Vision": {
+    "LineDetector": {
+      "HoughLines": {
+        "max_line_gap": 10,
+        "min_line_length": 0,
+        "rho": 0.5,
+        "theta": 0.0027,
+        "threshold": 28
+      },
+      "LineEqualPredicate": {
+        "angle_eps": 0.048,
+        "error_px": 4
+      },
+      "Preproc": {
+        "kernel_size": 71,
+        "min_thresh": 165,
+        "ColorThresh": {
+          "min_1": 160,
+          "min_2": 90,
+          "min_3": 0,
+          "max_1": 255,
+          "max_2": 238,
+          "max_3": 142
+        }
+      }
+    },
+    "BallDetector": {
+      "median_blur_size": 7,
+      "ColorThresh": {
+        "min_3": 100,
+        "min_2": 50,
+        "min_1": 5,
+        "max_3": 255,
+        "max_2": 180,
+        "max_1": 100
+      },
+      "GaborThresh": {
+        "min_3": 35,
+        "min_2": 0,
+        "min_1": 0,
+        "max_3": 255,
+        "max_2": 0,
+        "max_1": 0
+      }
+    }
+  }
+}
