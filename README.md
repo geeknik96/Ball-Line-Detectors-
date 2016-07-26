@@ -1,2 +1,3 @@
-# Ball-Line-Detectors-
-Ball Detector + Line Detector for robot soccer.
+# SoccerRobotVision
+
+This is ball and line detector for robot soccer
